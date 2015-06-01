@@ -1,0 +1,29 @@
+<html> 
+<head> 
+<title>Three.js app</title> 
+<link rel="stylesheet" type="text/css" href="style/main.css" />
+</head> 
+<body> 
+
+<script src="lib/three.min.js"></script>
+<script src="js/shaders/diffuse_shader.js"></script>
+<script src="js/geometry_switch.js"></script>
+<script src="js/project_stub.js"></script>
+</div>
+
+<!--- set up buttons and text ---->
+<div id="shader_div">
+<b>Pick a shader</b><br>
+<a onclick="diffuseShader();">Diffuse Shader</a><br>
+
+<b>Pick geometry</b><br>
+<a onclick="sphereGeometry();">Sphere</a><br>
+<a onclick="torusKnotGeometry();">Torus Knot</a><br>
+<a onclick="octahedronGeometry();">Octahedron</a><br>
+<a onclick="torusGeometry();">Torus</a><br>
+
+<b><a onclick="toggleLightMove()">Toggle Light Rotate</a></b>
+</div>
+
+</body> 
+</html>
