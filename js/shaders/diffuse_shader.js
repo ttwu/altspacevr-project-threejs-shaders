@@ -47,9 +47,6 @@ DiffuseShader = {
 
 		"void main() {",
 		"	vec3 diffuse = max(NdotL, 0.0)* vec3(diffuseColor.r*lightColor.r, diffuseColor.g*lightColor.g, diffuseColor.b*lightColor.b);",
-		"	float facing = 1.0;",
-		"	if (NdotL <= 0.0)",
-		"		facing = 0.0;",
 		"	gl_FragColor = vec4(diffuse, 1.0);",
 		"}"
 	].join("\n")
